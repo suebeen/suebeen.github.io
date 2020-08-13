@@ -3,6 +3,7 @@ title: "백준 10844번: 쉬운 계단 수"
 date: 2020-08-13 18:42:00 -0400
 categories: baekjoon algorithm dp python
 ---
+
 ### 문제
 45656이란 수를 보자.
 
@@ -34,7 +35,8 @@ for i in range(2, N+1):
             num_arr[i][j] = num_arr[i-1][j-1] + num_arr[i-1][j+1]
 
 print(int((sum(num_arr[N])-num_arr[N][0]) % 1000000000))
-```　
-`문제출처 : ` [baekjoon10844]
+```
+
+문제출처 : [baekjoon10844]
 
 [baekjoon10844]: https://www.acmicpc.net/problem/10844
